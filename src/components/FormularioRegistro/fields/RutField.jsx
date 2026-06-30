@@ -40,7 +40,7 @@ export default function RutField({ value, onChange, error }) {
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         onPaste={handlePaste}
-        placeholder="Ej: 12345678-9"
+        placeholder="Ingrese su RUT"
         autoComplete="off"
         aria-invalid={!!error}
         className={`w-full border rounded-lg px-4 py-2 text-sm focus:outline-none ${borderClass}`}

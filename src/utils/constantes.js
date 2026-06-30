@@ -7,4 +7,3 @@ export const TECLAS_SISTEMA = [
   'Home',
   'End',
 ]
- 

@@ -29,11 +29,12 @@ export default function FechaField({ value, onChange, error }) {
         aria-invalid={!!error}
         className={`w-full border rounded-lg px-4 py-2 text-sm focus:outline-none ${borderClass}`}
       />
+      {/* 
       <small className="text-xs text-gray-400 mt-1 block">
         {modoManual
           ? 'Modo manual activado. Borra el valor para volver al automático.'
           : 'Se establece automáticamente. Puedes editarla si lo deseas.'}
-      </small>
+      </small> */}
       {error && <small className="field-error text-xs text-red-500 mt-1 block">{error}</small>}
     </div>
   )

@@ -74,7 +74,7 @@ export default function FormularioRegistro() {
             role="status"
             className="success-banner mb-6 bg-green-50 border border-green-200 text-green-700 rounded-lg px-4 py-3 text-sm font-medium"
           >
-            Formulario enviado correctamente. Los datos fueron registrados.
+            Los datos se registraron exitosamente.
           </div>
         )}
 

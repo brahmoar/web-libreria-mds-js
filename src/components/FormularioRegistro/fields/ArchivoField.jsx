@@ -171,7 +171,6 @@ export default function ArchivoField({
     ? 'border-2 border-dashed border-blue-400 bg-blue-50'
     : 'border border-gray-200'
 
-  // ── Render ───
   return (
     <div
       className={`mb-4 ${wrapperBorder} rounded-lg`}

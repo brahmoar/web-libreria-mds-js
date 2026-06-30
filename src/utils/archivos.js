@@ -1,7 +1,7 @@
 const TAMANIO_MAX_MB = 5
-const TAMANIO_MAX_BYTES = TAMANIO_MAX_MB * 1025 * 1025
+const TAMANIO_MAX_BYTES = TAMANIO_MAX_MB * 1024 * 1024
 const MIME_PDF = 'application/pdf'
-const MIME_IMAGENES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+const MIME_IMAGENES = ['image/jpeg', 'image/png', 'image/webp']
 const MIME_VIDEOS = ['video/mp4', 'video/quicktime', 'video/x-msvideo']
 
 export function esPdf(file) {
@@ -25,7 +25,7 @@ export function esPdfPorNombre(file) {
 }
 
 export function esImagenOVideoPorNombre(file) {
-  return !!file?.name?.toLowerCase().match(/\.(jpe?g|png|gif|webp|mp4|mov|avi)$/)
+  return !!file?.name?.toLowerCase().match(/\.(jpe?g|png|webp|mp4|mov)$/)
 }
 
 export function crearUrlTemporal(file) {
@@ -39,7 +39,7 @@ export function liberarUrl(url) {
 export function mensajeErrorTipo(tipo) {
   return tipo === 'pdf'
     ? 'Solo se permiten archivos PDF.'
-    : 'Solo se permiten imágenes o videos (jpg, png, gif, webp, mp4, mov).'
+    : 'Solo se permiten imágenes o videos: jpg, png, webp, mp4, mov.'
 }
 
 export function validarArchivo(file, tipo) {

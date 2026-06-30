@@ -1,7 +1,7 @@
 import ArchivoField from './ArchivoField'
 
 const ACCEPT_IMAGEN_VIDEO =
-  'image/jpeg,image/png,image/gif,image/webp,video/mp4,video/quicktime,video/x-msvideo'
+  'image/jpeg,image/png,image/webp,video/mp4,video/quicktime,video/x-msvideo'
 
 export default function ImagenField({ value, onArchivoChange, error }) {
   return (
